@@ -1,9 +1,0 @@
-#to-top, #to-bottom {
-	position: fixed;
-	font-size: 30px;
-	color: #AF5550;
-	display: none
-}
-#to-top:hover, #to-bottom:hover,#to-top:focus, #to-bottom:focus {
-	color: #993A34;
-}
