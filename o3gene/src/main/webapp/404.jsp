@@ -10,6 +10,6 @@
 <title>404</title>
 </head>
 <body>
-404-1113333335555
+404
 </body>
 </html>
