@@ -1,0 +1,111 @@
+#goodsLabel2 {
+	position: relative;
+	width: 575px;
+	height: 542px;
+	padding: 20px;
+	background: #fff;
+}
+
+#goodsLabel2 img {
+	margin: auto;
+	display: block;
+}
+
+#goodsLabel2 h3, #goodsLabel2 p {
+	margin: 10px 0 !important;
+	float: left;
+}
+
+#goodsLabel2 p {
+	line-height: 26px;
+	margin-left: 20px;
+}
+
+#goodsLabel2 p span {
+	margin-left: 10px;
+}
+
+#goodsLabel2 .more {
+	float: right;
+	line-height: 26px;
+	margin: 10px 0 !important;
+}
+
+#goodsLabel2 .goodsesBox {
+	height: 91%;
+}
+
+#goodsLabel2 .left {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+#goodsLabel2 .right {
+	width: 50%;
+	float: right;
+	height: 100%;
+}
+
+#goodsLabel2 .leftOne {
+	height: 75%;
+	border: 1px red solid;
+}
+
+#goodsLabel2 .leftTwo {
+	height: 25%;
+	border: 1px red solid;
+}
+
+#goodsLabel2 .leftTwo>div:last-child{
+	height:100%;
+}
+
+#goodsLabel2 .leftOne, #goodsLabel2 .leftTwo {
+	border-top: 1px solid #E1E1E1;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+
+#goodsLabel2 .goodsBox {
+	border-top: 1px solid #E1E1E1;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+
+#goodsLabel2 .leftOne:hover, #goodsLabel2 .leftTwo:hover, #goodsLabel2 .goodsBox:hover
+	{
+	border: 1px solid #AF5550;
+}
+
+#goodsLabel2 .goodsBox {
+	height: 50%;
+}
+
+#goodsLabel2 .leftTwo, #goodsLabel2 .leftOne {
+	padding: 20px 20px 20px 0;
+}
+#goodsLabel2 .goodsBox {
+	padding: 20px 0 20px 20px;
+}
+#goodsLabel2 .leftTwo>div {
+	float: left;
+	width: 50%;
+}
+
+#goodsLabel2 .leftTwo>div:first-child {
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+#goodsLabel2 .imgBox {
+	height: 88%;
+    padding-top: 15%;
+}
+
+#goodsLabel2 .imgBox>div {
+	width: 50%;
+	float: left;
+}

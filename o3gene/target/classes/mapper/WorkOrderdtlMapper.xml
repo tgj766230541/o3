@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.o3gene.dao.WorkOrderdtlMapper">
+  <resultMap id="BaseResultMap" type="com.o3gene.beans.WorkOrderdtl">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="work_order_id" jdbcType="INTEGER" property="workOrderId" />
+    <result column="auther" jdbcType="INTEGER" property="auther" />
+    <result column="date" jdbcType="TIMESTAMP" property="date" />
+    <result column="chat" jdbcType="VARCHAR" property="chat" />
+    <result column="manager_operation" jdbcType="VARCHAR" property="managerOperation" />
+    <result column="manage_sta" jdbcType="INTEGER" property="manageSta" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, work_order_id, auther, date, chat, manager_operation, manage_sta
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from work_orderdtl
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from work_orderdtl
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.o3gene.beans.WorkOrderdtl">
+    insert into work_orderdtl (id, work_order_id, auther, 
+      date, chat, manager_operation, 
+      manage_sta)
+    values (#{id,jdbcType=INTEGER}, #{workOrderId,jdbcType=INTEGER}, #{auther,jdbcType=INTEGER}, 
+      #{date,jdbcType=TIMESTAMP}, #{chat,jdbcType=VARCHAR}, #{managerOperation,jdbcType=VARCHAR}, 
+      #{manageSta,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.o3gene.beans.WorkOrderdtl">
+    insert into work_orderdtl
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="workOrderId != null">
+        work_order_id,
+      </if>
+      <if test="auther != null">
+        auther,
+      </if>
+      <if test="date != null">
+        date,
+      </if>
+      <if test="chat != null">
+        chat,
+      </if>
+      <if test="managerOperation != null">
+        manager_operation,
+      </if>
+      <if test="manageSta != null">
+        manage_sta,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="workOrderId != null">
+        #{workOrderId,jdbcType=INTEGER},
+      </if>
+      <if test="auther != null">
+        #{auther,jdbcType=INTEGER},
+      </if>
+      <if test="date != null">
+        #{date,jdbcType=TIMESTAMP},
+      </if>
+      <if test="chat != null">
+        #{chat,jdbcType=VARCHAR},
+      </if>
+      <if test="managerOperation != null">
+        #{managerOperation,jdbcType=VARCHAR},
+      </if>
+      <if test="manageSta != null">
+        #{manageSta,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.o3gene.beans.WorkOrderdtl">
+    update work_orderdtl
+    <set>
+      <if test="workOrderId != null">
+        work_order_id = #{workOrderId,jdbcType=INTEGER},
+      </if>
+      <if test="auther != null">
+        auther = #{auther,jdbcType=INTEGER},
+      </if>
+      <if test="date != null">
+        date = #{date,jdbcType=TIMESTAMP},
+      </if>
+      <if test="chat != null">
+        chat = #{chat,jdbcType=VARCHAR},
+      </if>
+      <if test="managerOperation != null">
+        manager_operation = #{managerOperation,jdbcType=VARCHAR},
+      </if>
+      <if test="manageSta != null">
+        manage_sta = #{manageSta,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.o3gene.beans.WorkOrderdtl">
+    update work_orderdtl
+    set work_order_id = #{workOrderId,jdbcType=INTEGER},
+      auther = #{auther,jdbcType=INTEGER},
+      date = #{date,jdbcType=TIMESTAMP},
+      chat = #{chat,jdbcType=VARCHAR},
+      manager_operation = #{managerOperation,jdbcType=VARCHAR},
+      manage_sta = #{manageSta,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,148 @@
+/*用户样式*/
+.nav-item-click:hover>a {
+	color: #fff;
+	z-index:3;
+}
+
+#userImg {
+	width: 24px;
+	height: 24px;
+	border: 1px solid;
+	border-radius: 12px;
+	display: inline-block;
+	position: relative;
+	top: 6px;
+	margin-right:5px;
+}
+
+.small-user-img{
+	border-radius: 12px;
+	display: inline-block;
+	position: relative;
+}
+
+#userImg+span {
+	display: inline-block;
+	position: relative;
+	left: 5px;
+}
+
+/*用户信息面板*/
+.user_box {
+	border: 1px solid #b0544f;
+	position: absolute;
+	width: 278px;
+}
+
+.user_box li{
+	width:auto !important;
+	padding:0px !important;
+}
+
+.user-item-top {
+	background-color: #b0544f;
+	text-align:center;
+	color:#f6dddd;
+}
+
+.big-user-img {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	margin:15px;
+}
+
+.big-user-img img{
+	width: 90px;
+	height: 90px;
+	border:2px solid #fff;
+	border-radius: 45px;
+	display: inline-block;
+}
+
+.user-item-up {
+	background-color: #b0544f;
+	text-align:center;
+	color:#f6dddd;
+	padding-bottom: 15px;
+}
+
+.user-item-down a,.user-item-bottom a{
+	display:block;
+	color:#000 !important;
+}
+
+.user-fa{
+	font-size:13px;
+}
+
+.user-item-down a{
+	position:relative;
+}
+.user-item-down a:hover,.user-item-bottom a:hover{
+	color:#b0544f !important;
+}
+
+.user-item-down td,.user-item-bottom td{
+	height: 45px;
+}
+
+.user-item-down table,.user-item-bottom table{
+	width:100%;
+	text-align:center;
+}
+
+.user-item-down td {
+	background-color: #fff;
+	width:69px;
+}
+
+.user-item-bottom td {
+	background-color: #f9f9f9;
+	width:139px;
+}
+
+.user-item-bottom td:hover{
+	background-color:#f6dddd;
+}
+
+.user-hint{
+	background:red;
+	height:12px;
+	width:12px;
+	border:1px solid red;
+	border-radius:6px;
+	position:absolute;
+    top: -3px;
+    left: 6px;
+	line-height:8px;	
+}
+.user-hint span{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    color: #fff;
+}
+.user-hint-cart{
+    left: 7px !important;
+}
+.user-hint-noNum{
+	background:red;
+	height:8px;
+	width:8px;
+	border:1px solid red;
+	border-radius:4px;
+	position:absolute;
+	top: 2px;
+    left: 8px;
+}
+.user-hint-img{
+	background:red;
+	height:8px;
+	width:8px;
+	border:1px solid red;
+	border-radius:4px;
+	position:absolute !important;
+    top: -5px;
+    left: 20px !important;
+}

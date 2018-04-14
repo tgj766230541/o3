@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.o3gene.dao.MidGradeClassMapper">
+  <resultMap id="BaseResultMap" type="com.o3gene.beans.MidGradeClassKey">
+    <id column="show_grade_id" jdbcType="INTEGER" property="showGradeId" />
+    <id column="class_id" jdbcType="INTEGER" property="classId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="com.o3gene.beans.MidGradeClassKey">
+    delete from mid_grade_class
+    where show_grade_id = #{showGradeId,jdbcType=INTEGER}
+      and class_id = #{classId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.o3gene.beans.MidGradeClassKey">
+    insert into mid_grade_class (show_grade_id, class_id)
+    values (#{showGradeId,jdbcType=INTEGER}, #{classId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.o3gene.beans.MidGradeClassKey">
+    insert into mid_grade_class
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="showGradeId != null">
+        show_grade_id,
+      </if>
+      <if test="classId != null">
+        class_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="showGradeId != null">
+        #{showGradeId,jdbcType=INTEGER},
+      </if>
+      <if test="classId != null">
+        #{classId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>
