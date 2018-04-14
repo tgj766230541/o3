@@ -1,0 +1,71 @@
+#goodsLabel1{
+	width:570px;
+	height:542px;
+	position:relative;
+	padding:20px;
+	background:#fff;
+}
+#goodsLabel1 h3,#goodsLabel1 p{
+	margin:10px 0 !important;
+	float:left;
+}
+#goodsLabel1 p{
+	line-height:26px;
+	margin-left:20px;
+}
+
+#goodsLabel1 p span{
+	margin-left:10px;
+}
+
+#goodsLabel1 .more{
+	float:right;
+	line-height:26px;
+	margin:10px 0 !important;
+}
+#goodsLabel1 ul{
+	border-top:1px solid #E1E1E1;
+}
+#goodsLabel1 .goodsBox{
+	padding: 6px 0 20px 0;
+    margin-left: 8px;
+    width: 256px;
+    float:left;
+}
+#goodsLabel1 .goodsTitle{
+	line-height: 42px;
+    height: 42px;
+}
+#goodsLabel1 h4, #goodsLabel1 h5, #goodsLabel1 h6 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+#goodsLabel1 .goodsImgOne,#goodsLabel1 .imgRight{
+	float:left;
+}
+#goodsLabel1 .goodsImgOne{
+	width: 170px;
+    height: 170px;
+    background:#fff;
+}
+
+#goodsLabel1 .imgRight>div:first-child{
+	margin-bottom:2px;
+}
+
+#goodsLabel1 .goodsImgTwo{
+	width: 84px;
+    height: 84px;
+    overflow: hidden;
+    background:#fff;
+    margin-left:2px;
+}
+#goodsLabel1 img{
+	-webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+#goodsLabel1 img:hover{
+	opacity:0.8;
+}

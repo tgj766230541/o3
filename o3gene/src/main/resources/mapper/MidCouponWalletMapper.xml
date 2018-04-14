@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.o3gene.dao.MidCouponWalletMapper">
+  <resultMap id="BaseResultMap" type="com.o3gene.beans.MidCouponWalletKey">
+    <id column="coupon_id" jdbcType="INTEGER" property="couponId" />
+    <id column="wallet" jdbcType="INTEGER" property="wallet" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="com.o3gene.beans.MidCouponWalletKey">
+    delete from mid_coupon_wallet
+    where coupon_id = #{couponId,jdbcType=INTEGER}
+      and wallet = #{wallet,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.o3gene.beans.MidCouponWalletKey">
+    insert into mid_coupon_wallet (coupon_id, wallet)
+    values (#{couponId,jdbcType=INTEGER}, #{wallet,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.o3gene.beans.MidCouponWalletKey">
+    insert into mid_coupon_wallet
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="couponId != null">
+        coupon_id,
+      </if>
+      <if test="wallet != null">
+        wallet,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="couponId != null">
+        #{couponId,jdbcType=INTEGER},
+      </if>
+      <if test="wallet != null">
+        #{wallet,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>

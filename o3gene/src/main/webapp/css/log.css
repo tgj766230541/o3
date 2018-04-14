@@ -1,0 +1,80 @@
+body {
+	background: url(../img/logBackground.jpg) no-repeat;
+	background-size: 100%
+}
+
+#logBox {
+	width: 431px;
+	height: auto;
+	border-radius: 3px;
+	font-family: "微软雅黑";
+	background: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -215px;
+	margin-top: -150px;
+}
+
+.form-control {
+	margin: auto;
+	display: inline-block !important;
+}
+
+.reg_forget {
+	min-width: 1px;
+	float: right;
+	font-size: 10px;
+	position: relative;
+	top: -5px;
+}
+
+.reg_forget a {
+	color: #b0544f;
+}
+
+.reg_forget a:hover {
+	color: #964743;
+}
+
+#usr, #pwd {
+	width: 70% !important;
+}
+
+#gen {
+	width: 30% !important;
+}
+
+.form-group {
+	height: 34px;
+}
+
+.log-item-label {
+	width: 75px !important;
+	text-align: right;
+	color: #b0544f;
+}
+
+.logo-title {
+	height: 40px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #b0544f;
+	text-align: center;
+	line-height: 40px;
+	margin: 5px 5px 30px;
+}
+
+.logo-title button {
+	background-color: #b0544f;
+	border-color: #b0544f;
+}
+
+.logo-title button:hover {
+	background-color: #964743;
+	border-color: #964743;
+}
+
+.send-code {
+	display: inline-block;
+}

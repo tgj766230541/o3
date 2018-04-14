@@ -1,0 +1,331 @@
+/*全局样式*/
+
+/*--------------标签样式-------------*/
+/*内外间距*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*基础字体*/
+body {
+	font-size: 14px;
+	font-family: Arial;
+}
+
+/*a标签*/
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+/*li标签*/
+li {
+	list-style: none;
+}
+
+input:disabled {
+	background-color: #CCC;
+}
+
+/*--------------class样式-------------*/
+/*====框架类====*/
+/*页面宽度*/
+.main{
+	width:100%;
+	background:#F9F9F9;
+}
+
+/*内容宽度*/
+.content{
+	width:1170px;
+    margin: auto;
+    padding-top:1px;
+}
+
+/*条目间距*/
+.item-box{
+	margin:12px 0;
+	width: 100%;
+}
+.item-box tr td{
+	padding:0 6px;
+}
+.item-box tr>td:first-child{
+	padding-left:0;
+}
+.item-box tr>td:last-child{
+	padding-right:0;
+}
+
+/*清除浮动专用*/
+.clearBoth{
+	display:block;
+	clear:both !important;
+}
+
+/*图片自动缩放专用,针对父元素高宽固定、没有padding的img*/
+.autoImg{
+	position:relative;
+}
+
+/*组件容器*/
+.mod-box{
+	position:relative !important;
+}
+.mod-box-color{
+	position:relative !important;
+	background:#fff !important;
+}
+
+/*====字体类====*/
+/*系统字体*/
+.sys-font{
+	font-family: "Arial" !important;
+}
+
+/*用户字体*/
+.user-font {
+	font-family: "宋体" !important;
+}
+
+/*文本字体*/
+.text-font {
+	font-family: "宋体" !important;
+}
+
+/*====字号类====*/
+/*大号字号*/
+.font-big {
+	font-size: 16px !important;
+}
+
+/*中号文本字号*/
+.font-mid-text {
+	font-size: 13px !important;
+}
+
+/*小号标题字号*/
+.font-sml-title {
+	font-size: 13px !important;
+}
+
+/*小号文本字号*/
+.font-sml-text {
+	font-size: 12px !important;
+}
+
+/*注解字号*/
+.font-desc {
+	font-size: 12px !important;
+}
+
+/*====主题色类====*/
+/*主题色*/
+.color-theme {
+	color: #AF5550 !important;
+}
+
+/*黑色*/
+.black-color{
+	color:#000 !important;
+}
+
+/*重色*/
+.weight-color{
+	color:#732C27 !important;
+}
+
+/*深色*/
+.deep-color{
+	color:#993A34 !important;
+}
+
+/*深色*/
+.color-theme{
+	color:#993A34 !important;
+}
+
+/*浅色*/
+.shallow-color{
+	color:#CD5550 !important;
+}
+
+/*轻色*/
+.light-color{
+	color:#F6DDDD !important;
+}
+
+/*白色*/
+.white-color{
+	color:#FFF !important;
+}
+
+/*深灰色*/
+.deep-gray-color{
+	color:#999 !important;
+}
+
+/*中灰色*/
+.mid-gray-color{
+	color:#CCC !important;
+}
+
+/*浅灰色*/
+.shallow-gray-color{
+	color:#E1E1E1 !important;
+}
+
+/*轻灰*/
+.light-gray-color{
+	color:#F9F9F9 !important;
+}
+
+/*====基础色类====*/
+/*底色*/
+.color-base {
+	color: #993A34 !important;
+}
+
+.color-base:hover, .color-base:focus {
+	color: #CD5550 !important;
+}
+
+/*黑色*/
+.color-black {
+	color: #000 !important;
+}
+
+.color-balck:hover, .color-balck:focus {
+	color: #999 !important;
+}
+
+/*灰色*/
+.color-gray {
+	color: #999 !important;
+}
+
+.color-gray:hover, .color-gray:focus {
+	color: #CCC !important;
+}
+
+/*白色*/
+.color-white {
+	color: #fff !important;
+}
+
+.color-white:hover, .color-white:focus {
+	color: #E1E1E1 !important;
+}
+
+/*底白*/
+.color-light {
+	color: #fff !important;
+}
+
+.color-light:hover, .color-light:focus {
+	color: #F6DDDD !important;
+}
+
+/*底黑*/
+.color-weight {
+	color: #000 !important;
+}
+
+.color-weight:hover, .color-weight:focus {
+	color: #993A34 !important;
+}
+
+/*灰深*/
+.color-gray-deep {
+	color: #CCC !important;
+}
+
+.color-gray-deep:hover, .color-gray-deep:focus {
+	color: #CD5550 !important;
+}
+
+/*====按钮色类====*/
+/*深重*/
+.button-weight {
+	background-color: #993A34 !important;
+}
+
+.button-weight:hover, .button-weight:focus {
+	background-color: #732C27 !important;
+}
+
+/*灰轻*/
+.button-light: {
+	background-color: #F9F9F9 !important;
+}
+
+.button-light:hover, .button-light:focus {
+	background-color: #F6DDDD !important;
+}
+
+/*====边框色类====*/
+/*深浅*/
+.border-weight {
+	border-color: #993A34 !important;
+}
+
+.border-weight:hover, .border-weight:focus {
+	border-color: #CD5550 !important;
+}
+
+/*明轻*/
+.border-light {
+	border-color: transparent !important;
+}
+
+.border-light:hover, .border-light:focus {
+	border-color: #F6DDDD !important;
+}
+
+/*====背景色====*/
+/*主题背景*/
+.back-theme {
+	background-color: #AF5550 !important;
+}
+
+/*面板背景*/
+.back-label {
+	background-color: #fefbdc !important;
+}
+
+/*====点缀色====*/
+/*文字点缀*/
+.dot-font {
+	color: #F0B70C !important;
+}
+
+.dot-font:hover, .dot-font:focus {
+	color: #EDC756 !important;
+}
+
+/*====图标点缀====*/
+/*深浅*/
+.ico-font-weight {
+	color: #993A34 !important;
+}
+
+.ico-font-weight:hover, .ico-font-weight:focus {
+	color: #CD5550 !important;
+}
+
+/*绿灰*/
+.ico-font-green {
+	color: #CCC !important;
+}
+
+.ico-font-green:hover, .ico-font-green:focus {
+	color: #8ED14C !important;
+}

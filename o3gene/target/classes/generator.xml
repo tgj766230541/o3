@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>					
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">					
+<generatorConfiguration>					
+					
+	<!-- 引入链接数据库的connector jar包 -->				
+	<classPathEntry location="C:\Users\Administrator\Desktop\mysql-connector-java-5.1.45-bin.jar" />				
+	<context id="context1" targetRuntime="MyBatis3">				
+					
+		<!-- 启用注释 -->			
+		<commentGenerator>			
+			<property name="suppressDate" value="false" />		
+			<property name="suppressAllComments" value="true" />		
+		</commentGenerator>			
+					
+		<!-- 数据库连接配置 -->			
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"			
+			connectionURL="jdbc:mysql://localhost:3306/o3gene" userId="root"		
+			password="root" />		
+					
+		<!-- 生产实体类 -->			
+		<javaModelGenerator targetPackage="com.o3gene.beans"			
+			targetProject="o3gene/src/main/java">		
+			<property name="enableSubPackages" value="true" />		
+			<property name="trimStrings" value="true" />		
+		</javaModelGenerator>			
+					
+		<!-- 生成映射文件 -->			
+		<sqlMapGenerator targetPackage="mapper"			
+			targetProject="o3gene/src/main/resources">		
+			<property name="enableSubPackages" value="true" />		
+		</sqlMapGenerator>			
+					
+		<!-- 生成mapper类 -->			
+		<javaClientGenerator targetPackage="com.o3gene.dao"			
+			targetProject="o3gene/src/main/java" type="XMLMAPPER">		
+			<property name="enableSubPackages" value="true" />		
+		</javaClientGenerator>			
+					
+		<!--<table tableName="T_FEE_AGTBILL" domainObjectName="FeeAgentBill" enableCountByExample="false" 			
+			enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" 		
+			selectByExampleQueryId="false"/> -->		
+					
+		<table tableName="address" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="forum_user" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="goods_class" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="goods_model" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="goodsdtl" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_coupon_wallet" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_div_html" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_div_user" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_grade_class" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_grade_goods" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_orders_goods" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_shopping_cart" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_type_div" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="mid_work_manager" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="orders" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="post" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="post_follow" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="show_div" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="show_grade" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="show_html" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="user" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="user_operation" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="user_post" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="user_real" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="user_type" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="wallet" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="wallet_card" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="wallet_coupon" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="work_order" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		<table tableName="work_orderdtl" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+			<!--<columnRenamingRule searchString="^D_" replaceString=""/> -->
+		</table>
+		
+
+		
+	</context>				
+</generatorConfiguration>
