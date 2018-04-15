@@ -1,0 +1,19 @@
+.fastN {
+	height: 132px;
+	border: 1px solid #E1E1E1;
+	padding: 10px;
+	background: #FEFBDC;
+	position: relative;
+}
+
+.fastN .title {
+	margin: 5px 0 10px !important;
+	font-size: 20px !important;
+	font-weight: bold;
+}
+
+.fastN .item{
+	float:left;
+	width:50%;
+	margin-top:10px;
+}

@@ -10,7 +10,7 @@
 <title>草稿</title>
 </head>
 <body>
-<c:import url="/model/forumL.jsp"></c:import>
+<c:import url="/model/hotTopic.jsp"></c:import>
 
 </body>
 </html>

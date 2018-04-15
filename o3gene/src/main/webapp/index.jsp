@@ -12,7 +12,7 @@
 <link href="${pageContext.request.contextPath }/page_css/index.css"
 	rel="stylesheet">
 </head>
-<body>
+<body class="index">
 	<!-- 顶部导航 -->
 	<c:import url="/model/topBar.jsp"></c:import>
 	<!-- banner -->
@@ -42,17 +42,17 @@
 						<!-- 推荐帖子 -->
 						<div><c:import url="model/forumL.jsp"></c:import></div>
 					</td>
-					<td  width="32%>
-						<!-- 最新帖子 -->
-						<div><c:import url="model/forumL.jsp"></c:import></div>
-					</td">
 					<td  width="32%">
-						<!-- 客服支持 -->
-						<div class="mod-box-color">1</div>
+						<!-- 最新帖子  -->
+						<div><c:import url="model/forumL.jsp"></c:import></div>
+					</td>
+					<td  width="32%" valign="top">
+						<!-- 热点话题 -->
+						<div class="navLabelBox"><c:import url="model/hotTopic.jsp"></c:import></div>
 						<!-- 快捷导航 -->
-						<div class="mod-box-color">1</div>
+						<div class="navLabelBox"><c:import url="model/fastNav.jsp"></c:import></div>
 						<!-- 标签搜索 -->
-						<div class="mod-box-color">1</div>
+						<div class="navLabelBox"><c:import url="model/tagLabel.jsp"></c:import></div>
 					</td>
 				</tr>
 			</table>

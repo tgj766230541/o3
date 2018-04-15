@@ -1,0 +1,28 @@
+.hotT {
+	height: 132px;
+	border: 1px solid #E1E1E1;
+	padding: 10px;
+	background: #FEFBDC;
+	position: relative;
+}
+
+.hotT h3 {
+	margin: 10px 0 !important;
+	font-size: 20px !important;
+	font-weight: bold;
+}
+
+.hotT .left {
+	width: 250px;
+	float: left;
+	height: 100%;
+}
+
+.hotT .right {
+	float: right;
+	width: 110px;
+	height: 100%;
+	padding: 10px;
+	font-size: 80px;
+	text-align:center;
+}

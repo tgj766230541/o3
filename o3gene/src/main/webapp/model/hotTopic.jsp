@@ -5,14 +5,13 @@
 	value="${pageContext.request.scheme}${'://'}${pageContext.request.serverName}${':'}${pageContext.request.serverPort}${pageContext.request.contextPath}" />
 
 <!-- 热门话题 -->
-<link href="${pageContext.request.contextPath }/css/goodsTheme.css"
+<link href="${pageContext.request.contextPath }/css/hotTopic.css"
 	rel="stylesheet">
-<script src="${pageContext.request.contextPath }/js/goodsTheme.js"></script>
 
-<div>
-	<div>
-		<h3></h3>
-		<p></p>
+<div class="hotT">
+	<div class="left">
+		<a href="#"><h3 class="color-base">你今天吃了吗</h3></a>
+		<p class="font-mid-text deep-gray-color">你今天吃了吗你今天吃了吗你今天吃了吗你今天吃了吗你今天吃了吗你今天吃了吗你今天吃了吗</p>
 	</div>
-	<div>123456789</div>
+	<div class="right"><i class="fa fa-fire deep-color" aria-hidden="true"></i></div>
 </div>
